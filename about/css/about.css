@@ -1,0 +1,445 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+
+/* ----------------------------------Top navigation Starts------------------------------------------ */
+
+.navigation-bar {
+    /* background-color: #FEF2F4; */
+    /* background-color: #FFC1CC; */
+    background-color: #FCC200;
+    padding: 0 1.5%;
+    letter-spacing: 3px;
+    height: 80px;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    /* background-color: #FEF2F4; */
+    /* background-color: #FFC1CC; */
+    background-color: #FCC200;
+    overflow: hidden;
+    float: right;
+    margin-top: 20px;
+    z-index: 11;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 13px 16px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    /* background-color: #04AA6D; */
+    /* background-color: #D14D72; */
+    background-color: #be1e47;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    /* font: 400 21.5px/1.8 "Lato", sans-serif; */
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: 10px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 13px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 99px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 4;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #be1e47;
+    color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #be1e47;
+    color: white;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1024px) {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        padding: 13px 16px;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1024px) {
+    .logo {
+        width: 190px;
+        height: 50px;
+        margin-top: 15px;
+    }
+    .topnav.responsive {
+        position: fixed;
+        top: 0px;
+        right: 6px;
+        width: 116px;
+        z-index: 300;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+        min-width: 110px;
+        text-align-last: right;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+/* -------------------------------------Top Navigation Ends------------------------------------------ */
+* {box-sizing: border-box}
+.scrolling-text{
+    /* background-color: #FFABAB; */
+    /* background-color: #FF9999; */
+    background-color: #BCB88A;
+    /* background-color: #c2e6ee; */
+    max-width: none;
+    margin: 10px 0;
+    padding: 10px 100px;
+}
+marquee{
+    display: block;
+}
+
+.about-heading{
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+/* .about-image-container{
+    padding: auto 200px auto 200px;
+} */
+.about-image{
+    margin: 20px 0px 40px 0px;
+    text-align: center;
+    /* border-radius: 100px; */
+} 
+.ganpati-img{
+    border-radius: 10px;
+    width:100%; 
+    height:600px;
+}
+.about-button-container{
+    /* margin-top: 80px; */
+    /* justify-content: center; */
+    align-self: center;
+    /* text-align: center; */
+}
+.about-button{
+    margin: 10px 0;
+    padding: 15px;
+}
+.about-button:hover{
+    color: white;
+}
+.about-info{
+    letter-spacing: 0.5px;
+}
+@media screen and (max-width: 600px){
+    .scrolling-text{
+        padding: 10px 0;
+    }
+    .ganpati-img{
+        width: 350px;
+        height: 225px;
+    }
+    .about-button-container{
+        margin: 40px 0;
+    }
+}
+@media screen and (max-width: 778px){
+    .ganpati-img{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+
+
+/* --------------------------------------Bottom Section Starts--------------------------------------------- */
+
+#info{
+    /* background-color: #FE7F9C; */
+    margin-top: 30px;
+    background-color: #e6b400;
+    padding: 25px;
+}
+h4{
+    /* text-align: center; */
+    font-weight: 500;
+    /* font-size: 26px; */
+}
+.bottom-info{
+    padding-top: 10px;
+}
+.get-in-touch-info{
+    padding-left: 0;
+}
+.get-in-touch{
+    padding-left: 40px;
+}
+.get-in-touch-icon{
+    font-size: 25px;
+    margin-right: 15px;
+}
+.link{
+    text-align: center;
+}
+.bottom-link-section{
+    margin: 5px;
+}
+.bottom-link{
+    text-decoration: none;
+    color: black;
+}
+.bottom-link:hover{
+    color: white;
+}
+.connect-with-us{
+    text-align: center;
+}
+.footer-social{
+    color: black;
+    padding: 7px;
+    margin: 10px;
+    font-size: 30px;
+}
+.footer-social:hover{
+    color: white;
+}
+footer{
+    font-size: 12px;
+    text-align: center;
+}
+@media screen and (max-width: 576px){
+    #info{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+    .get-in-touch{
+        padding: 30px 0 30px 12px;
+    }
+    .link{
+        /* text-align: left; */
+        padding-bottom: 30px;
+    }
+    .connect-with-us{
+        text-align: center;
+    }
+}
+
+
+
+/* -------------------------------------Text Animation----------------------------------------------- */
+
+.animatable {
+  
+    /* initially hide animatable objects */
+    visibility: hidden;
+    
+    /* initially pause animatable objects their animations */
+    -webkit-animation-play-state: paused;   
+    -moz-animation-play-state: paused;     
+    -ms-animation-play-state: paused;
+    -o-animation-play-state: paused;   
+    animation-play-state: paused; 
+  }
+  /* show objects being animated */
+.animate-in {
+    visibility: visible;
+    
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+  
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+  }
+  
+  .animate-out {
+    visibility: visible;
+    
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+  
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+  
+    -webkit-animation-direction: reverse;
+    -moz-animation-direction: reverse;
+    -ms-animation-direction: reverse;
+    -o-animation-direction: reverse;
+    animation-direction: reverse;
+  }
+  
+  
+  @-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(-20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.animate-in.fadeInDown, .animate-out.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	-moz-animation-name: fadeInDown;
+	-o-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+}
